@@ -92,7 +92,7 @@ header {
 .hero {
   position: relative;
   height: 340px;
-  width: 100%
+  width: 100%;
 }
 
 .hero img {
@@ -107,6 +107,10 @@ h2 {
   font-weight: lighter;
 }
 
+.hero-text {
+  margin: 0 25px;
+}
+
 .hero h4, .hero h2 {
   color: white;
   position: absolute;
@@ -119,7 +123,6 @@ h2 {
 }
 
 .hero h4 {
-  width:
   bottom: 50px;
 }
 
@@ -128,8 +131,30 @@ a {
   color: #5e5e5e;
 }
 
-article img {
+article {
+  padding: 10px;
+}
+
+.image-col {
+  height: 100%;
   width: 30%;
+  overflow:auto;
+  float: left;
+}
+
+.image-col img {
+  min-height: 85px;
+  max-height: 85px;
+  width: 100%;
+  object-fit: cover;
+  float:left;
+}
+
+.text-col {
+  width: 70%;
+  float:left;
+  font-size: .8em;
+  line-height: 2em;
 }
 
 .icon {
