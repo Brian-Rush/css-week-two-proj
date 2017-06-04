@@ -90,24 +90,41 @@ header {
 }
 
 .hero {
+  background-size: cover;
+  background-position: center;
   position: relative;
   height: 340px;
   width: 100%;
+  object-fit: cover;
   overflow: auto;
+  z-index: 30;
 }
 
-.hero img {
-      background-color:red;
+.hero-one {
+  background-image: url("../img/hero1.jpg");
+}
 
-       /*linear-gradient(180deg,transparent,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4));*/
+.hero-two {
+  background-image: url("../img/hero2.jpg");
+}
+
+.transparent-layer {
+  background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4));
+  overflow: hidden;
+  height: 100%;
+  width: 100%
+  z-index: 2;
+}
+
+/*.hero img {
+      background-color:red;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      /*z-index: 300;*/
       object-fit: cover;
-}
+}*/
 
 /*.hero img {
   height: 100%;
@@ -128,7 +145,7 @@ h2 {
   color: white;
   position: absolute;
   height: auto;
-  z-index: 2;
+  z-index: 3;
 }
 
 .hero h2 {
