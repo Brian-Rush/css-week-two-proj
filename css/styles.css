@@ -128,23 +128,6 @@ a {
   z-index: 2;
 }
 
-/*.hero img {
-      background-color:red;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-}*/
-
-/*.hero img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}*/
-
-
 h2 {
   font-weight: lighter;
 }
@@ -279,9 +262,32 @@ img.icon {
 
 @media screen and (min-width: 1000px) {
 
-  article {
-    width: calc(50% - 10px);
+  .hero, article {
     float: left;
+  }
+
+  .hero {
+    width: calc(50% - 10px);
+  }
+
+  .hero-one, article:nth-of-type(-n+2) {
+    height: 360px;
+  }
+
+  article {
+    /*width: calc(50% - 10px);*/
+    width: calc(25% - 15px);
+    /*width: 220px;*/
+    /*float: left;*/
+    margin-left: 20px;
+  }
+
+  .no-left-margin {
+    margin-left: 0px;
+  }
+
+  article .image-col {
+    height: 140px;
   }
 
   .even article {
